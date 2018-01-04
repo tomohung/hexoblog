@@ -8,5 +8,6 @@ tags: [vim, hexo]
 
 <!-- more -->
 新的開始，決定重啟很久沒動的blog。原先是用octopress，這次改換用hexo去管理。
+跟octopress相比，現在hexo可以自己獨立一個repo而不需要綁定username.github.io的名字，感覺清爽了些。
 
 另外，在用了幾個月的spacemacs之後，決定要重回vim的懷抱，這次把自己的vimrc清空重頭開始打造，希望自己能更著重在vim的操作上面，而不是被一些plugin去影響去學習vim的基本操作。
