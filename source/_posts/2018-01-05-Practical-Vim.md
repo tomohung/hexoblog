@@ -181,5 +181,5 @@ Read Drew Neil's Practical Vim.
 
 以前習慣所見所得，所以比較常用`v`選取後再用`y`複制，不過`yt,`或`y/abc`可以用更少的操作鍵來得到同樣的效果，需要刻意練習。
 
-另外`<C-r>`呼叫register內容，不止在插入模式可用，命令模式也可以command mode
+另外`<C-r>`呼叫register內容，不止在插入模式可用，命令模式command mode也可以
 
