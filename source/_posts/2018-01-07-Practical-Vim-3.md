@@ -1,0 +1,279 @@
+---
+title: Practical Vim - 3
+date: 2018-01-07 22:16:37
+tags: [vim, practical vim]
+---
+## Mark標記
+
+`m{char}` 用選定的字元{char}標記目前游標的位置
+``{char}` 跳到{char}標記的位置
+
+tip: `mm` ``m`常用標記
+
+` `` ` 上次跳轉之前的位置
+
+``.` 上次修改的位置
+
+## `%`開關括號間跳轉
+
+將{}替換成[]
+
+```
+cities = {London Berlin New York}
+```
+
+```
+利用f{% r] `` r[
+```
+
+```
+cities = [London Berlin New York]
+```
+因為改完]之後就無法再用%跳回了，所以可以用` `` `或者是`<C-o>`跳回
+
+處理成對符號蠻麻煩的，這邊真的要考慮用plugin
+
+## Plugin for pair parentheses, brackets, quotes
+
+#### [Auto Pairs](https://github.com/jiangmiao/auto-pairs)
+快速處理成對符號，包含新增、刪除
+`<M-e>`系列的快速鍵在iterm2上沒辦法用
+
+#### [surround.vim](https://github.com/tpope/vim-surround)
+快速新增、編輯成對符號在已有的字串上面
+
+同樣將{}替換成[]
+
+```
+cities = {London Berlin New York}
+```
+
+`f{` `cs{[`
+
+```
+cities = [ London Berlin New York ]
+```
+
+注意左右多了空白
+
+## 快速跳轉
+
+- `<C-o>` `<C-i>`
+- `:jumps`
+- `'m`或``m` Jump to mark
+- ``.` 指向最後一次修改的地方
+- `gi` 立刻跳到最後一次修改的地方並進入插入模式，實用！
+- 瀏覽大量文件後要跳回，先`mM`，查完後``M`跳回
+
+## 複制貼上
+
+- 將somethingInTheWay換成collection
+```
+collection = getCollection();
+process(somethingInTheWay, target);
+```
+
+`yiw` `jww` `diw` `P` 失敗！
+
+`yiw` `jww` `diw` `"0P` OK!!
+
+`"0`是複制專用的暫存器，只有`y`操作會改變其值
+
+- 如果是在插入模式時，也可以用`<C-r>0`來貼上
+
+- 如果是HTML
+```
+<table>
+  <tr>
+    <td>Keystrokes</td>
+    <td>Buffer Contents</td>
+  </tr>
+</table>
+```
+
+游標停在tr
+`yap` `gP`
+
+```
+<table>
+  <tr>
+    <td>Keystrokes</td>
+    <td>Buffer Contents</td>
+  </tr>
+  <tr>
+    <td>Keystrokes</td>
+    <td>Buffer Contents</td>
+  </tr>
+</table>
+```
+
+`gp` `gP`和`p` `P`類似，差別在插入後游標的位置在新的複制內容上
+
+## 系統剪貼板
+
+- `"+p`將外部程式中複制的內容貼到游標後（而且此方法在貼入多行程式碼時，不會受到autoindent的影響）
+- `"+yy`將游標所在行的內容複制到系統剪貼板
+
+## Macro
+
+```
+foo = 1
+bar = 'a'
+foobar = foo + bar
+```
+
+`qa` `A;<ESC>` `Ivar <ESC>` `q`
+完成對第一次加上var和行尾加上;
+
+```
+var foo = 1;
+bar = 'a'
+foobar = foo + bar
+```
+
+然後 `j` `@a` `j@@`
+```
+var foo = 1;
+var bar = 'a';
+var foobar = foo + bar;
+```
+`@@`表示執行前一次的Macro
+
+> 錄制Macro時確保每一條指令都可以被重覆執行
+
+## 連續本文行上修改
+
+Origin
+```
+1. one
+2. two
+3. three
+4. four
+```
+
+Goal
+```
+1) One
+2) Two
+3) Three
+4) Four
+```
+
+- 串行的方式
+`qa` `f.r)` `w~j`
+`3@a`
+
+- 並行的方式
+遇到其中一行不滿足規則會失敗，改用並行方式
+```
+1. one
+2. two
+// breaking line
+3. three
+4. four
+```
+`qa` `f.r)` `w~`
+選擇`V`後
+`:normal @a<CR>`
+```
+1) One
+2) Two
+// breaking line
+3) Three
+4) Four
+```
+
+- 查內容`:reg {char}`
+- 追加內容`q{capital char}` 執行完`q`結束
+
+## 批次修改檔案
+
+例：給每個class加上外部的module
+```
+# description
+class Animal
+  # todo
+end
+```
+
+`:args {file patten}` 讀入符合樣板的檔案
+`:args`顯示參數列表內容
+
+#### 並行
+`:first`確保是第一個檔案
+
+`qa`
+`gg/class<CR>`
+`O` `module Rank<ESC>`
+`j>G`
+`Go` `end<ESC>`
+`q`
+
+還不要儲存，因為等會要對所有文件做同樣的動作
+`:e!`撒消修改
+`:argdo narmal @a`
+`:wa`
+
+#### 串行
+
+增加指令
+`qA`
+`:next`
+`q`
+`100@a`
+
+100只是要比所有檔案數還多就可以，反正只要失敗就停止
+
+## 疊代求值給列表編號
+
+```
+one
+two
+three
+four
+```
+
+利用`:let`
+`:let i=1`
+`qa`
+`I<C-r>=i<CR><ESC`
+`:let i+=1`
+`q`
+`jVG`
+`:normal @a`
+
+```
+1) one
+2) two
+3) three
+4) four
+```
+
+`:echo i`可印出變數值
+
+利用複制貼上再用`<C-a>`也是一種解法
+
+## 修改Macro
+
+利用`:put {char}`印出內容，修改後
+`0"{char}y$` `dd` 寫回暫存器
+
+## 搜尋匹配
+
+#### `\V`
+```
+The N key searched backward...
+the \v pattern switch (a.k.a. very magic search)
+```
+
+`.`是特殊字元可匹配任一字元，所以`/a.k.a`會匹配到`ackwa`
+`\Va.k.a` very nomagic模式就沒這個問題了
+
+#### `\v`
+
+搭配`<` `>`
+`\v<the>`可正確匹配到單字the
+
+## 搜尋後游標移到匹配字尾
+
+`/{word}/e`
