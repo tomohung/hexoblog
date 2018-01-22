@@ -4,34 +4,6 @@ date: 2018-01-06 14:30:48
 tags: [vim, practical vim]
 ---
 
-## 叫出命令行窗口
-
-`q/` open command-line window with history of searchs
-`q:` open command-line window with Ex commands
-`<C-f>` switch from command line mode to command line window
-
-另外command line window是可以編輯的
-
-## Shell
-
-`:!ruby %` 呼叫ruby執行當前檔案，應該可以應用在寫測試時的呼叫
-
-以csv為例
-```
-first name, last name, email
-john, smith, john@example.com
-drew, neil, drew@vimcast.com
-jane, doe, jane@example.com
-```
-
-`:2,$!sort -t',' -k2` 從第二行到最後一行照column 2排序
-
-```
-first name, last name, email
-jane, doe, jane@example.com
-drew, neil, drew@vimcast.com
-john, smith, john@example.com
-```
 
 ## 管理緩沖區
 
