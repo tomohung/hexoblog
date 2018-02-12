@@ -1,5 +1,5 @@
 ---
-title: 'practical vim registers '
+title: 'Practical Vim - Registers '
 tags:
   - vim
   - practical vim
