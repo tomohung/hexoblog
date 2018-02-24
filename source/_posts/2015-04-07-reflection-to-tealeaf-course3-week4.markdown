@@ -3,7 +3,7 @@ layout: post
 title: "Reflection to Tealeaf Course3 Week4"
 date: 2015-04-07 13:11:30 +0800
 comments: true
-categories: [rails, tealeaf]
+tags: [rails, tealeaf]
 ---
 
 ### Three kinds of BDD

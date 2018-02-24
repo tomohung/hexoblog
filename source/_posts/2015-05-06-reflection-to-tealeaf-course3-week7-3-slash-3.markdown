@@ -3,7 +3,7 @@ layout: post
 title: "Reflection to Tealeaf Course3 Week7 (3/3)"
 date: 2015-05-06 17:22:47 +0800
 comments: true
-categories: [rails, tealeaf]
+tags: [rails, tealeaf]
 ---
 
 #Messsage Expectation

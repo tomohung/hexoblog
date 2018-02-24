@@ -3,7 +3,7 @@ layout: post
 title: "Interview Review after Tealeaf"
 date: 2015-07-26 07:07:25 +0800
 comments: true
-categories: [interview, rails, tealeaf]
+tags: [interview, rails, tealeaf]
 ---
 
 It's a late post since I got a Rails job for 2 month. I'll share my background and my interview experience, hope it will be helpful if you have the similar background like me.

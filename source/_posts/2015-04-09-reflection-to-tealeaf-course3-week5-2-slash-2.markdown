@@ -3,7 +3,7 @@ layout: post
 title: "Reflection to Tealeaf Course3 Week5 (2/2)"
 date: 2015-04-09 15:58:27 +0800
 comments: true
-categories: [rails, tealeaf]
+tags: [rails, tealeaf]
 ---
 
 ###Continuous Integration(CI) and Continous Delivery(CD)

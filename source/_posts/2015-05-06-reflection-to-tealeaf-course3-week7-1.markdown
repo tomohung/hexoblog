@@ -3,7 +3,7 @@ layout: post
 title: "Reflection to Tealeaf Course3 Week7 (1/3)"
 date: 2015-05-06 14:20:15 +0800
 comments: true
-categories: [rails, tealeaf]
+tags: [rails, tealeaf]
 ---
 
 Last week, we use Stripe for charge in UsersController#create, it's a bit little complex code here. We need to wrap it.

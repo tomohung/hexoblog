@@ -3,7 +3,7 @@ layout: post
 title: "Reflection of tealeaf week 2"
 date: 2015-01-07 00:15:13 +0000
 comments: true
-categories: [tealeaf, ruby]
+tags: [tealeaf, ruby]
 ---
 {% img right http://i.minus.com/ibnRw2O1pxsQam.png 320 %}
 

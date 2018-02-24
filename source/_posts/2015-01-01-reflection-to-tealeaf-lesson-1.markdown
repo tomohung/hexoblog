@@ -3,7 +3,7 @@ layout: post
 title: "Reflection to Tealeaf week 1"
 date: 2015-01-01 16:03:33 +0800
 comments: true
-categories: [tealeaf, ruby]
+tags: [tealeaf, ruby]
 ---
 
 {% img right http://i.minus.com/ibsevSRoOPCEmU.png 320 %}
@@ -21,7 +21,7 @@ After that, I start `Prep Course` @ tealeaf, reading the book [`Introduce to Pro
 
 About my struggles, as a C++ programmer, there are mainly two "What?" for ruby:
   
-  - variable scope: in C++, every local variable only survive in its scope, but in ruby, this is not always true. Even now, I'm still a little confused with that. Glad that I find a way to deal with this: `Never use outside variable in insdie scope, make them in different name`.
+  - variable scope: in C++, every lotags variable only survive in its scope, but in ruby, this is not always true. Even now, I'm still a little confused with that. Glad that I find a way to deal with this: `Never use outside variable in insdie scope, make them in different name`.
   
   - pointer & reference: when passing a variable to functions(in ruby called: methods), if varaible has prefix like `*` or `&`, it obvious means this variable may be modified in this methods. Ruby doesn't take this way, input variables in method could be modified just by what action do inside the method. Fotunately, ruby usaually append suffix `!` behind method's name to indicate this method modify input variable.
   

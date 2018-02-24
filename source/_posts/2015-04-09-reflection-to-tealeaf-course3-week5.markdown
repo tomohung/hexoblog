@@ -3,7 +3,7 @@ layout: post
 title: "Reflection to Tealeaf Course3 Week5 (1/2)"
 date: 2015-04-09 14:39:06 +0800
 comments: true
-categories: [rails, tealeaf]
+tags: [rails, tealeaf]
 ---
 
 ###Feature test for sending email

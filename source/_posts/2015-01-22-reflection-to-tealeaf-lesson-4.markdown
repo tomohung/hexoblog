@@ -3,7 +3,7 @@ layout: post
 title: "Reflection to Tealeaf Lesson 4"
 date: 2015-01-22 03:59:53 +0000
 comments: true
-categories: [tealeaf, sinatra, jQuery, Ajax, Heroku]
+tags: [tealeaf, sinatra, jQuery, Ajax, Heroku]
 ---
 
 {% img right http://i.minus.com/iS2bpDcNcj44W.jpg 320 %}

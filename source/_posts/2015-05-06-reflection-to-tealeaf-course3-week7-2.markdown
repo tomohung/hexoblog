@@ -3,7 +3,7 @@ layout: post
 title: "Reflection to Tealeaf Course3 Week7 (2/3)"
 date: 2015-05-06 15:42:37 +0800
 comments: true
-categories: [rails, tealeaf]
+tags: [rails, tealeaf]
 ---
 
 #Beyond MVC

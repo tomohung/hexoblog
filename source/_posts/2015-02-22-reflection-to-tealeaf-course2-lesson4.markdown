@@ -3,7 +3,7 @@ layout: post
 title: "Reflection to Tealeaf Course2 Lesson4"
 date: 2015-02-22 21:22:10 +0800
 comments: true
-categories: [rails, tealeaf]
+tags: [rails, tealeaf]
 ---
 
 In Course2(Rapid Prototyping with Ruby on Rails), [first week][] I learned about `Models and database`, [second week][] I learned about `Controllers and Views`. The [third week] I learned to add `Authentication` and `Polymorphic table`.

@@ -3,7 +3,7 @@ layout: post
 title: "Reflection to Tealeaf Course3 week1"
 date: 2015-03-06 08:40:32 +0800
 comments: true
-categories: [rails, tealeaf]
+tags: [rails, tealeaf]
 ---
 
 In Course3 week1, Kevin give me a schema of what should developper do from beginning.

@@ -3,7 +3,7 @@ layout: post
 title: "Reflection to Tealeaf Course2 Lesson3"
 date: 2015-02-16 00:37:25 +0000
 comments: true
-categories: [rails, tealeaf]
+tags: [rails, tealeaf]
 ---
 
 In Course2(Rapid Prototyping with Ruby on Rails), [first week][] I learned about `Models and database`, [second week][] I learned about `Controllers and Views`. This week I learned to add some features into my app, and make it vivid!!

@@ -3,7 +3,7 @@ layout: post
 title: "Tealeaf Course2 Lesson1 Quiz"
 date: 2015-01-30 08:13:42 +0000
 comments: true
-categories: [rails, tealeaf]
+tags: [rails, tealeaf]
 ---
 
 Answer these quizzes, then updated after watching solution.

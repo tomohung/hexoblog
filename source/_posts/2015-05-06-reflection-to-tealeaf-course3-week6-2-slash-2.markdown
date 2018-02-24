@@ -3,7 +3,7 @@ layout: post
 title: "Reflection to Tealeaf Course3 Week6 (2/2)"
 date: 2015-05-06 09:50:50 +0800
 comments: true
-categories: [rails, tealeaf]
+tags: [rails, tealeaf]
 ---
 
 These week we have two main part: [CarrierWave][] for uploading images as an admin, [Stripe][] for payments

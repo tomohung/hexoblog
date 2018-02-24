@@ -3,7 +3,7 @@ layout: post
 title: "Reflection to Tealeaf Course3 Week8 (1/2)"
 date: 2015-05-07 10:40:17 +0800
 comments: true
-categories: [rails, tealeaf]
+tags: [rails, tealeaf]
 ---
 
 #Subscription

@@ -3,7 +3,7 @@ layout: post
 title: "Reflection to Tealeaf Course2 Lesson2"
 date: 2015-02-10 08:39:30 +0000
 comments: true
-categories: [rails, tealeaf]
+tags: [rails, tealeaf]
 ---
 
 [Last week](http://www.tomohung.com/blog/2015/02/02/reflection-to-tealeaf-course-2-lesson-1/), I know Models and Database side of Rails.

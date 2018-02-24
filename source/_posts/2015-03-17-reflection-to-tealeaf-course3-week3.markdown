@@ -3,7 +3,7 @@ layout: post
 title: "Reflection to Tealeaf Course3 Week3"
 date: 2015-03-17 09:41:26 +0800
 comments: true
-categories: [rails, tealeaf]
+tags: [rails, tealeaf]
 ---
 
 [In week 2](http://www.tomohung.com/blog/2015/03/11/reflection-to-tealeaf-course3-week2/), Tealeaf talked about how to test controller, and this week, I got a more comprehensive test consideration for controller and user interaction.

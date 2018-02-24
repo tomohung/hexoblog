@@ -3,7 +3,7 @@ layout: post
 title: "Reflection to Tealeaf Course3 Week2"
 date: 2015-03-11 11:21:17 +0800
 comments: true
-categories: [rails, tealeaf]
+tags: [rails, tealeaf]
 ---
 
 There are 3 kinds of test: `Unit`, `Functional`, `Integration`. In [week 1](http://www.tomohung.com/blog/2015/03/06/reflection-to-tealeaf-course3-week1/), we test **Model**, this should belong to `Unit test` . And this week we test **Controller**, this should belong to `Functional test`. I guess it should be `Integration test` when we move into part of **View** test.
