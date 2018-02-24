@@ -3,7 +3,7 @@ layout: post
 title: "Getting started with Phoenix - 3. Create a new Phoenix project"
 date: 2016-08-17 20:59:48 +0800
 comments: true
-categories: [elixir, phoenix, getting_started_with_phoenix]
+tags: [elixir, phoenix, getting_started_with_phoenix]
 ---
 
 ## Create a new Phoenix project

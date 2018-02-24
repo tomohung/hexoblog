@@ -3,7 +3,7 @@ layout: post
 title: "Phoenix with Bootstrap"
 date: 2016-06-24 21:50:28 +0800
 comments: true
-categories: [phoenix, elixir, bootstrap]
+tags: [phoenix, elixir, bootstrap]
 ---
 
 最近終於真正開始用Phoenix來開發，對於一個前端近乎白痴的人來說，起手式當然要來個匯入Bootstrap才行。

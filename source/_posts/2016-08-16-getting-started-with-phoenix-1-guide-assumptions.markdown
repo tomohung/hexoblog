@@ -3,7 +3,7 @@ layout: post
 title: "Getting started with Phoenix - 1. Guide Assumptions"
 date: 2016-08-16 21:16:55 +0800
 comments: true
-categories: [elixir, phoenix, getting_started_with_phoenix]
+tags: [elixir, phoenix, getting_started_with_phoenix]
 ---
 
 這份說明是參考Rails官網的Getting Started with Rails，以相同的架構和實作內容，來介紹Phoenix這個框架。如果你本身己經有了Rails的基礎，那麼你應該能跟著這個說明一起實作，體驗到Phoenix/Elixir與Rails/Ruby一些不同或相同的地方，希望你能在過程中得到些樂趣。

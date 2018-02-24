@@ -3,7 +3,7 @@ layout: post
 title: "Getting started with Phoenix - 4. Phoenix File/Folder"
 date: 2016-08-17 21:29:15 +0800
 comments: true
-categories: [elixir, phoenix, getting_started_with_phoenix]
+tags: [elixir, phoenix, getting_started_with_phoenix]
 ---
 
 在上一篇文章順利的看到首頁了，現在先等等，看一下剛剛我們利用`mix phoenix.new`所建立出來的資料夾結構
