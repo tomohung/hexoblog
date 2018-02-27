@@ -6,8 +6,6 @@ comments: true
 tags: [tealeaf, ruby, sinatra, http, bootstrap, html, css]
 ---
 
-{%img right http://i.minus.com/ilSTmPNHVpVTm.png 320 %}
-
 It's realy a tough week for me, because I'm totally new to web development.
 There are lots of material need to be done:
 

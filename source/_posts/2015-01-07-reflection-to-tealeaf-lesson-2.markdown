@@ -5,7 +5,6 @@ date: 2015-01-07 00:15:13 +0000
 comments: true
 tags: [tealeaf, ruby]
 ---
-{% img right http://i.minus.com/ibnRw2O1pxsQam.png 320 %}
 
 Although I have some option video not done yet, I want to share some of my reflection.
 

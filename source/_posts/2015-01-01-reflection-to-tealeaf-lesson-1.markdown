@@ -6,8 +6,6 @@ comments: true
 tags: [tealeaf, ruby]
 ---
 
-{% img right http://i.minus.com/ibsevSRoOPCEmU.png 320 %}
-
 Happy new year!!
 
 Before I talk about where I struggled with, I would like to say something before I join the course.

@@ -3,7 +3,7 @@ layout: post
 title: "show HTTP is stateless by Sinatra"
 date: 2015-01-14 21:25:15 +0800
 comments: true
-categories: [sinatra, web, ruby]
+categories: [tealeaf, sinatra, web, ruby]
 ---
 
 In tealeaf week 3, introduce to HTTP.
@@ -50,8 +50,6 @@ and this will show a button, click the button will invoke a post request back to
 OK, then what will `@name` show in home.erb after click button??
 
 It shows `Guest`, not `tealeaf`. Why?
-
-{% img http://i.minus.com/i9oeLWDYI4DBb.png %}
 
 The key point is: when 2 redirect to 3, it's a new request, instance variable like @name will be deleted after redirect, then create a new one.
 

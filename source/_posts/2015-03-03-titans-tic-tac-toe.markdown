@@ -6,8 +6,6 @@ comments: true
 categories: [tealeaf, rails]
 ---
 
-{% img http://i.minus.com/i2XJ0y9E48CHg.png %}
-
 ###Prelude
 
 This is a blog entry for record my first personal project for Rails, and focus on what's are first time if starting a new project `From Zero To One`.
