@@ -190,16 +190,16 @@ s 009ac91 Add other file
 
 * Trees
 包含連結的blobs, permission, subdirectories
- 
+
 * Commits
 包含commit hash, parent commit, metadata
 
 commit <- parent(s)
 |
 |->tree <- subtree, mode, name
-	|
-	|->blob
-	
+|
+|->blob
+
 ## Git Branches/Tags
 
 #### Local branches
@@ -313,10 +313,10 @@ https://help.github.com/articles/getting-permanent-links-to-files/
 協作是不可避免的，所以得有些基本技巧先熟知
 
 - Open PR (Pull Request)
-- 提供上下脈絡
-	- Why?
-	- Other solution?
-	- Any assumptions?
+  - 提供上下脈絡
+  - Why?
+  - Other solution?
+  - Any assumptions?
 - 截圖或gif ([licecap](https://www.cockos.com/licecap/))
 - code review ([thoughtbot guide to code review](https://github.com/thoughtbot/guides/tree/master/code-review))
 
@@ -337,16 +337,16 @@ $ git merge -
 $ git branch -d <branch>
 ```
 
- 刪除遠端
- 
- ```
- $ git push origin --delete <branch>
- ```
- 
- 不過遠端上可以在github PR page上操作會比較簡單。
- 
- ## 其它資源
- 
- - [git ready](http://gitready.com/)
- - [pro git](https://progit.org/)
- - [git internal pdf](https://github.com/pluralsight/git-internals-pdf)
+刪除遠端
+
+```
+$ git push origin --delete <branch>
+```
+
+不過遠端上可以在github PR page上操作會比較簡單。
+
+## 其它資源
+
+- [git ready](http://gitready.com/)
+- [pro git](https://progit.org/)
+- [git internal pdf](https://github.com/pluralsight/git-internals-pdf)
